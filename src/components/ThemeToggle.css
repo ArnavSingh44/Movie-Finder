@@ -1,0 +1,32 @@
+.theme-toggle {
+  background: var(--toggle-bg, #232323);
+  color: var(--toggle-fg, #ffeb3b);
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  z-index: 200;
+  transition: background 0.2s, color 0.2s;
+}
+.theme-toggle:hover {
+  background: var(--toggle-hover, #ff1744);
+  color: #fff;
+}
+@media (max-width: 700px) {
+  .theme-toggle {
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.1rem;
+  }
+} 

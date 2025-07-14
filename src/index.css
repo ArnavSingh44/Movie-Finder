@@ -1,0 +1,118 @@
+body {
+  --sidebar-bg: #181818;
+  --sidebar-fg: #fff;
+  --sidebar-hover: #282828;
+  --accent: #ff1744;
+  --hero-fg: #fff;
+  --plans-fg: #fff;
+  --plan-bg: #232323;
+  --toggle-bg: #232323;
+  --toggle-fg: #ffeb3b;
+  --toggle-hover: #ff1744;
+  --page-bg: transparent;
+  --input-bg: #fff;
+  --input-fg: #222;
+  --input-border: #bbb;
+  --button-bg: #2196f3;
+  --button-fg: #fff;
+  --button-hover: #1769aa;
+  --info-msg: #555;
+  --error-msg: #f44336;
+  --card-bg: #fff;
+  --card-fg: #222;
+  --card-shadow: rgba(0,0,0,0.08);
+  --poster-bg: #eee;
+  --overview-fg: #444;
+  --btn-add-bg: #2196f3;
+  --btn-add-fg: #fff;
+  --btn-add-hover: #1769aa;
+  --btn-remove-bg: #f44336;
+  --btn-remove-fg: #fff;
+  --btn-remove-hover: #b71c1c;
+  --navbar-bg: #222;
+  --navbar-fg: #fff;
+  background: #111;
+  color: #fff;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+[data-theme="light"] {
+  --sidebar-bg: #f5f5f5;
+  --sidebar-fg: #222;
+  --sidebar-hover: #e0e0e0;
+  --accent: #ff1744;
+  --hero-fg: #222;
+  --plans-fg: #222;
+  --plan-bg: #fff;
+  --toggle-bg: #fff;
+  --toggle-fg: #ff1744;
+  --toggle-hover: #ff1744;
+  --page-bg: #f7f7f7;
+  --input-bg: #fff;
+  --input-fg: #222;
+  --input-border: #bbb;
+  --button-bg: #2196f3;
+  --button-fg: #fff;
+  --button-hover: #1769aa;
+  --info-msg: #555;
+  --error-msg: #f44336;
+  --card-bg: #fff;
+  --card-fg: #222;
+  --card-shadow: rgba(0,0,0,0.08);
+  --poster-bg: #eee;
+  --overview-fg: #444;
+  --btn-add-bg: #2196f3;
+  --btn-add-fg: #fff;
+  --btn-add-hover: #1769aa;
+  --btn-remove-bg: #f44336;
+  --btn-remove-fg: #fff;
+  --btn-remove-hover: #b71c1c;
+  --navbar-bg: #fff;
+  --navbar-fg: #222;
+  background: #f7f7f7;
+  color: #222;
+}
+
+[data-theme="dark"] {
+  --sidebar-bg: #181818;
+  --sidebar-fg: #fff;
+  --sidebar-hover: #282828;
+  --accent: #ff1744;
+  --hero-fg: #fff;
+  --plans-fg: #fff;
+  --plan-bg: #232323;
+  --toggle-bg: #232323;
+  --toggle-fg: #ffeb3b;
+  --toggle-hover: #ff1744;
+  --page-bg: transparent;
+  --input-bg: #232323;
+  --input-fg: #fff;
+  --input-border: #444;
+  --button-bg: #2196f3;
+  --button-fg: #fff;
+  --button-hover: #1769aa;
+  --info-msg: #bbb;
+  --error-msg: #ff5252;
+  --card-bg: #232323;
+  --card-fg: #fff;
+  --card-shadow: rgba(0,0,0,0.18);
+  --poster-bg: #181818;
+  --overview-fg: #ccc;
+  --btn-add-bg: #2196f3;
+  --btn-add-fg: #fff;
+  --btn-add-hover: #1769aa;
+  --btn-remove-bg: #f44336;
+  --btn-remove-fg: #fff;
+  --btn-remove-hover: #b71c1c;
+  --navbar-bg: #222;
+  --navbar-fg: #fff;
+  background: #111;
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

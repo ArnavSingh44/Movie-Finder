@@ -1,0 +1,18 @@
+.watchlist-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.info-msg {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #555;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem 1.5rem;
+} 
