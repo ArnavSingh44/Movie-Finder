@@ -7,7 +7,7 @@ import {
   query,
   where,
   getDocs,
-  limit as firestoreLimit
+  limit
 } from 'firebase/firestore';
 import { 
   getMovieRef, 

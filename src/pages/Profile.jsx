@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useMovies } from '../contexts/MovieContext';
 import { useNavigate } from 'react-router-dom';
 import { 
-  FaUser, FaFilm, FaHistory, FaClock, FaThumbsUp, FaThumbsDown, 
-  FaSignOutAlt, FaCog, FaStar, FaRegClock, FaRegThumbsUp, FaRegThumbsDown,
-  FaHeart, FaRegHeart, FaEye, FaRegEye, FaFire, FaRegStar, FaStarHalfAlt,
+  FaUser, FaFilm, FaHistory, FaClock, 
+  FaSignOutAlt, FaStar, FaRegClock, 
   FaTimes, FaArrowUp, FaChartBar
 } from 'react-icons/fa';
 import { Bar, Pie } from 'react-chartjs-2';
