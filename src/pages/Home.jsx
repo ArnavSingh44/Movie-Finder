@@ -98,8 +98,20 @@ function Home() {
         data = await getPopularMovies(page + 1);
       }
       if (data && data.results && data.results.length > 0) {
-        setMovies(prev => [...prev, ...data.results]);
-        setPage(prev => prev + 1);
+        // Filter out any movies that already exist in the current movies array
+        const existingIds = new Set(movies.map(movie => movie.id));
+        const newMovies = data.results.filter(movie => !existingIds.has(movie.id));
+        
+        if (newMovies.length > 0) {
+          setMovies(prev => [...prev, ...newMovies]);
+          setPage(prev => prev + 1);
+        } else if (data.results.length > 0) {
+          // If we got results but they're all duplicates, try the next page
+          setPage(prev => prev + 1);
+          fetchMoreMovies();
+          return;
+        }
+        
         setHasMore(data.page < data.total_pages);
       } else {
         setHasMore(false);

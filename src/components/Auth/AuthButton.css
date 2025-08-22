@@ -1,0 +1,123 @@
+.auth-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.auth-toggle {
+  background-color: #ff1744;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+.auth-toggle:hover {
+  background-color: #e91e63;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.auth-modal {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  border: 1px solid #333;
+}
+
+.auth-modal h3 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background: #2d2d2d;
+  color: white;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ff1744;
+  box-shadow: 0 0 0 2px rgba(255, 23, 68, 0.2);
+}
+
+.auth-submit {
+  width: 100%;
+  padding: 12px;
+  background: #ff1744;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.auth-submit:hover {
+  background: #e91e63;
+}
+
+.auth-switch {
+  color: #aaa;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.auth-switch-btn {
+  background: none;
+  border: none;
+  color: #ff1744;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: 13px;
+}
+
+.auth-switch-btn:hover {
+  color: #e91e63;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .auth-container {
+    bottom: 15px;
+    left: 15px;
+  }
+  
+  .auth-modal {
+    width: 280px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
