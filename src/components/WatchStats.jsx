@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaClock, FaFilm, FaChartLine, FaCalendarAlt, FaStar, FaRegClock } from 'react-icons/fa';
+import { FaClock, FaFilm, FaChartLine, FaStar } from 'react-icons/fa';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { formatDuration, calculateWatchStats } from '../utils/watchStats';

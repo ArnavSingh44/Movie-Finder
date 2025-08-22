@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import { FaSearch, FaFilter, FaSortAmountDown, FaCalendarAlt, FaStar, FaTimes } from 'react-icons/fa';
-import { format, parseISO } from 'date-fns';
+import React, { useState, useMemo } from 'react';
+import { FaSearch, FaFilter, FaSortAmountDown, FaStar, FaTimes } from 'react-icons/fa';
+import { format } from 'date-fns';
 import { filterWatchHistory, sortWatchHistory, getYearOptions } from '../utils/watchStats';
 import MovieCard from './MovieCard';
 import './WatchHistory.css';

@@ -3,13 +3,11 @@ import {
   setDoc, 
   updateDoc, 
   arrayUnion, 
-  arrayRemove, 
   serverTimestamp,
   query,
   where,
   getDocs,
-  limit as firestoreLimit,
-  orderBy
+  limit as firestoreLimit
 } from 'firebase/firestore';
 import { 
   getMovieRef, 
