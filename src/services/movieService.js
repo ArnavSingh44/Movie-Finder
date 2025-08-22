@@ -6,8 +6,7 @@ import {
   serverTimestamp,
   query,
   where,
-  getDocs,
-  limit
+  getDocs
 } from 'firebase/firestore';
 import { 
   getMovieRef, 

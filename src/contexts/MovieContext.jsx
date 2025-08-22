@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { useAuth } from './AuthContext';
 import { 
   getWatchlist, 
@@ -23,7 +23,7 @@ export const MovieProvider = ({ children }) => {
   const [error, setError] = useState(null);
 
   // Load user's movie data
-  const loadUserData = async () => {
+  const loadUserData = useCallback(async () => {
     if (!currentUser) {
       setWatchlist([]);
       setRatings({});
@@ -68,12 +68,12 @@ export const MovieProvider = ({ children }) => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [currentUser]);
 
   // Load data when user changes
   useEffect(() => {
     loadUserData();
-  }, [currentUser?.uid]);
+  }, [currentUser?.uid, loadUserData]);
 
   // Add movie to watchlist
   const addToWatchlist = async (movie) => {

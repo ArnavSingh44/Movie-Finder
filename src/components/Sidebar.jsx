@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Sidebar.css';
 import AuthModal from './Auth/AuthModal';
 import { FaUser, FaSignOutAlt, FaCog, FaChevronDown } from 'react-icons/fa';
