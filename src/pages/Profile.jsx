@@ -4,7 +4,7 @@ import { useMovies } from '../contexts/MovieContext';
 import { useNavigate } from 'react-router-dom';
 import { 
   FaUser, FaFilm, FaHistory, FaClock, 
-  FaSignOutAlt, FaStar, FaRegClock, 
+  FaSignOutAlt, FaStar, FaRegClock, FaRegThumbsUp, FaFire, FaEye,
   FaTimes, FaArrowUp, FaChartBar
 } from 'react-icons/fa';
 import { Bar, Pie } from 'react-chartjs-2';
